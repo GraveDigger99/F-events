@@ -2039,7 +2039,7 @@ input:focus {
 
 .decor_main-blog {
   padding-bottom: 30px;
-  padding-top: 0;
+  padding-top: 0 !important;
 }
 
 .page_restuarants {
@@ -2236,7 +2236,7 @@ input:focus {
 
 .decor_restuarants-info {
   padding-bottom: 30px;
-  padding-top: 0;
+  padding-top: 0 !important;
 }
 
 .decor_restuarants-banner {
