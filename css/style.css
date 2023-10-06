@@ -1131,7 +1131,6 @@ input:focus {
   padding-left: 25px;
   padding-right: 25px;
   height: 100%;
-  width: 300px;
   height: 70px;
   background-color: #fff;
   border: 1px solid rgba(138, 101, 123, 0.3);
@@ -2653,6 +2652,28 @@ input:focus {
   font-size: 14px;
 }
 
+.reviews__button {
+  text-align: center;
+}
+
+.reviews__more {
+  color: var(--Dark-Pink, #8a657b);
+  font-size: 18px;
+  line-height: 1.1111111111;
+  letter-spacing: 0.9px;
+  text-transform: uppercase;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.625rem;
+}
+
 .reviews__row {
   display: -ms-grid;
   display: grid;
@@ -2934,8 +2955,16 @@ input:focus {
     margin-bottom: 3.75rem;
   }
 
+  .reviews {
+    padding-bottom: 6.25rem;
+  }
+
   .reviews__rows {
     padding-top: 3.75rem;
+  }
+
+  .reviews__rows {
+    padding-bottom: 3.75rem;
   }
 }
 
@@ -3064,8 +3093,16 @@ input:focus {
     margin-bottom: 1.25rem;
   }
 
+  .reviews {
+    padding-bottom: 2.5rem;
+  }
+
   .reviews__rows {
     padding-top: 1.5625rem;
+  }
+
+  .reviews__rows {
+    padding-bottom: 1.5625rem;
   }
 }
 
@@ -4455,6 +4492,18 @@ input:focus {
     }
 }
 
+@supports (padding-bottom: clamp( 2.5rem , 1.4565217391rem  +  5.2173913043vw , 6.25rem )) {
+    .reviews {
+      padding-bottom: clamp( 2.5rem , 1.4565217391rem  +  5.2173913043vw , 6.25rem );
+    }
+}
+
+@supports not (padding-bottom: clamp( 2.5rem , 1.4565217391rem  +  5.2173913043vw , 6.25rem )) {
+    .reviews {
+      padding-bottom: calc(2.5rem + 3.75 * (100vw - 20rem) / 71.875);
+    }
+}
+
 @supports (padding-top: clamp( 1.5625rem , 0.9538043478rem  +  3.0434782609vw , 3.75rem )) {
     .reviews__rows {
       padding-top: clamp( 1.5625rem , 0.9538043478rem  +  3.0434782609vw , 3.75rem );
@@ -4464,6 +4513,18 @@ input:focus {
 @supports not (padding-top: clamp( 1.5625rem , 0.9538043478rem  +  3.0434782609vw , 3.75rem )) {
     .reviews__rows {
       padding-top: calc(1.5625rem + 2.1875 * (100vw - 20rem) / 71.875);
+    }
+}
+
+@supports (padding-bottom: clamp( 1.5625rem , 0.9538043478rem  +  3.0434782609vw , 3.75rem )) {
+    .reviews__rows {
+      padding-bottom: clamp( 1.5625rem , 0.9538043478rem  +  3.0434782609vw , 3.75rem );
+    }
+}
+
+@supports not (padding-bottom: clamp( 1.5625rem , 0.9538043478rem  +  3.0434782609vw , 3.75rem )) {
+    .reviews__rows {
+      padding-bottom: calc(1.5625rem + 2.1875 * (100vw - 20rem) / 71.875);
     }
 }
 }
@@ -4521,6 +4582,10 @@ input:focus {
   }
 
   .column-restuarants__link:hover {
+    text-decoration: underline;
+  }
+
+  .reviews__more:hover {
     text-decoration: underline;
   }
 }
