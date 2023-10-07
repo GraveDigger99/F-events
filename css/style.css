@@ -1548,6 +1548,10 @@ input:focus {
   gap: 60px;
 }
 
+.halls-main__content {
+  overflow: auto;
+}
+
 .halls-main__controll {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2706,6 +2710,10 @@ input:focus {
           justify-content: space-between;
 }
 
+.item-restuarants {
+  overflow: auto;
+}
+
 .item-restuarants__title {
   color: var(--Black, #000);
   font-size: 24px;
@@ -2737,8 +2745,16 @@ input:focus {
   margin-bottom: 25px;
 }
 
+.item-restuarants__info {
+  overflow: auto;
+}
+
 .item-restuarants__info:not(:last-child) {
   margin-bottom: 20px;
+}
+
+.item-restuarants__info_mobile {
+  display: none;
 }
 
 .item-restuarants__label {
@@ -2760,6 +2776,7 @@ input:focus {
 }
 
 .item-restuarants__list li {
+  word-break: keep-all;
   color: var(--Black, #000);
   leading-trim: both;
   text-edge: cap;
@@ -4691,11 +4708,6 @@ input:focus {
     display: none;
   }
 
-  .halls-main__list {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-
   .halls-main__list:not(:last-child) {
     margin-bottom: 20px;
   }
@@ -5192,6 +5204,13 @@ input:focus {
     margin-bottom: 0.9375rem;
   }
 
+  .halls-main__list {
+    overflow-y: scroll;
+    white-space: nowrap;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+
   .halls-main__text {
     font-size: 16px;
   }
@@ -5382,11 +5401,22 @@ input:focus {
     margin-bottom: 1.25rem;
   }
 
+  .item-restuarants__info_mobile {
+    display: block;
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+
+  .item-restuarants__info_desktop {
+    display: none;
+  }
+
   .item-restuarants__list {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    overflow-y: scroll;
+    white-space: nowrap;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
   }
 
   .item-restuarants__list li::after {
@@ -5398,6 +5428,9 @@ input:focus {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
   }
 
   .column-restuarants__button {
