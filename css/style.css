@@ -1932,6 +1932,119 @@ input:focus {
   font-weight: 700;
 }
 
+.add-reviews {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.8))), #fff;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 100%), #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 100vh;
+}
+
+.add-reviews__wrapper {
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 65px;
+}
+
+.add-reviews__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 0.625rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.add-reviews__top:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.add-reviews__title {
+  color: var(--Black, #000);
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.add-reviews__title span {
+  font-weight: 700;
+}
+
+.add-reviews__button {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1.25rem;
+}
+
+.add-reviews__lines {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0.9375rem;
+}
+
+.add-reviews__line {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.add-reviews__line:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.add-reviews__input {
+  border: 1px solid var(--Dark-Pink, #8a657b);
+  padding: 25px;
+  font-size: 18px;
+  line-height: 1.1111111111;
+  width: 100%;
+}
+
+.add-reviews__textarea {
+  border: 1px solid var(--Dark-Pink, #8a657b);
+  width: 100%;
+  height: 155px;
+  padding: 25px;
+  font-size: 18px;
+  line-height: 1.1111111111;
+  resize: none;
+}
+
+.add-reviews__textarea:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.add-reviews__cta {
+  text-align: center;
+  padding-top: 40px;
+}
+
+.details-reviews__wrapper_add-reviews {
+  margin-bottom: 1.5625rem;
+}
+
 .page_catalog {
   padding-top: 120px;
 }
@@ -3964,6 +4077,10 @@ input:focus {
             flex-grow: 1;
   }
 
+  .add-reviews__wrapper {
+    width: 53.4375rem;
+  }
+
   .page_catalog-filter {
     padding-top: 4.375rem;
   }
@@ -4301,6 +4418,10 @@ input:focus {
 
   .gallery-popup__button-next svg {
     width: 100px;
+  }
+
+  .add-reviews__wrapper {
+    padding: 30px;
   }
 
   .page_catalog {
@@ -4649,6 +4770,24 @@ input:focus {
   }
 
   .breadcramps_halls {
+    padding-top: 20px;
+  }
+
+  .add-reviews__wrapper {
+    width: 100%;
+  }
+
+  .add-reviews__button {
+    width: 100%;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .add-reviews__cta {
     padding-top: 20px;
   }
 
@@ -5116,6 +5255,43 @@ input:focus {
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
             flex-grow: 1;
+  }
+
+  .add-reviews__title {
+    max-width: 200px;
+  }
+
+  .add-reviews__button {
+    font-size: 16px;
+  }
+
+  .add-reviews__lines {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .add-reviews__lines:not(:last-child) {
+    margin-bottom: 15px;
+  }
+
+  .add-reviews__lines {
+    gap: 0;
+  }
+
+  .add-reviews__input {
+    font-size: 16px;
+    padding: 15px;
+  }
+
+  .add-reviews__textarea {
+    font-size: 16px;
+    padding: 15px;
+  }
+
+  .details-reviews__wrapper_add-reviews span {
+    font-size: 16px !important;
   }
 
   .page_catalog {

@@ -2,7 +2,7 @@
 <html lang="ru">
 
 <head>
-	<title>Booking-data</title>
+	<title>Add reviews</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<link rel="stylesheet" href="css/style.min.css?_v=20231007142223">
@@ -11,20 +11,20 @@
 
 <body>
 	<div class="wrapper">
-		<main class="page page_booking-data">
-			<section class="booking-data">
-				<div class="booking-data__container">
-					<div class="booking-data__wrapper">
-						<div class="booking-data__top">
-							<div class="booking-data__title"><span>Поделитесь</span> <br> своим мнением</div>
-							<button class="booking-data__close">
+		<main class="page page_add-reviews">
+			<section class="add-reviews">
+				<div class="add-reviews__container">
+					<div class="add-reviews__wrapper">
+						<div class="add-reviews__top">
+							<div class="add-reviews__title"><span>Поделитесь</span> своим мнением</div>
+							<button class="add-reviews__button-close">
 								<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
 									<path d="M1 1L21 21" stroke="black" />
 									<path d="M21 1L1 21" stroke="black" />
 								</svg>
 							</button>
 						</div>
-						<div class="details-reviews__wrapper details-reviews__wrapper_booking-data">
+						<div class="details-reviews__wrapper details-reviews__wrapper_add-reviews">
 							<span>Оцените место</span>
 							<div class="row-catalog__raiting">
 								<div class="row-catalog__stars">
@@ -47,20 +47,32 @@
 								<div class="row-catalog__total">4,3</div>
 							</div>
 						</div>
-						<form action="#" class="booking-data__form">
-							<input placeholder="Ваше имя" class="booking-data__input" type="text">
-							<input placeholder="Ваша почта" class="booking-data__input" type="text">
-							<input placeholder="Ваш отзыв" class="booking-data__input booking-data__input_big" type="text">
-							<input placeholder="Плюсы" class="booking-data__input booking-data__input_big" type="text">
-							<input placeholder="Минусы" class="booking-data__input booking-data__input_big" type="text">
+						<form action="#" class="add-reviews__form">
+							<div class="add-reviews__lines">
+								<div class="add-reviews__line">
+									<input placeholder="Ваше имя" class="add-reviews__input" type="text">
+								</div>
+								<div class="add-reviews__line">
+									<input placeholder="Ваша почта" class="add-reviews__input" type="text">
+								</div>
+							</div>
+							<textarea placeholder="Ваш отзыв" class="add-reviews__textarea"></textarea>
+							<div class="add-reviews__line">
+								<input placeholder="Плюсы" class="add-reviews__input" type="text">
+							</div>
+							<div class="add-reviews__line">
+								<input placeholder="Минусы" class="add-reviews__input" type="text">
+							</div>
+							<div class="add-reviews__cta">
+								<button class="add-reviews__button button">
+									Добавить отзыв
+									<svg xmlns="http://www.w3.org/2000/svg" width="23" height="20" viewBox="0 0 23 20" fill="none">
+										<path d="M0 10L22 10" stroke="white" />
+										<path d="M17 5L22 10L17 15" stroke="white" />
+									</svg>
+								</button>
+							</div>
 						</form>
-						<button class="booking-data__button button">
-							<span>Добавить отзыв</span>
-							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="20" viewBox="0 0 24 20" fill="none">
-								<path d="M0.5 10L22.5 10" stroke="white" />
-								<path d="M17.5 5L22.5 10L17.5 15" stroke="white" />
-							</svg>
-						</button>
 					</div>
 				</div>
 			</section>
