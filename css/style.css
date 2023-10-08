@@ -1515,6 +1515,7 @@ input:focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding-bottom: 10px;
   gap: 0.9375rem;
 }
 
@@ -2086,8 +2087,12 @@ input:focus {
   margin-bottom: 35px;
 }
 
+.catalog__breadcramps {
+  padding-bottom: 10px;
+}
+
 .catalog__breadcramps:not(:last-child) {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .catalog__title {
@@ -2715,6 +2720,7 @@ input:focus {
 }
 
 .restuarants-info__breadcramps {
+  padding-bottom: 10px;
   overflow-y: auto;
   white-space: nowrap;
   -ms-flex-wrap: nowrap;
@@ -2722,7 +2728,7 @@ input:focus {
 }
 
 .restuarants-info__breadcramps:not(:last-child) {
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 .restuarants-info__wrapper {
@@ -2775,7 +2781,7 @@ input:focus {
 }
 
 .item-restuarants__info:not(:last-child) {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .item-restuarants__info_mobile {
@@ -2798,6 +2804,7 @@ input:focus {
   display: -ms-flexbox;
   display: flex;
   gap: 0.9375rem;
+  padding-bottom: 10px;
 }
 
 .item-restuarants__list li {
@@ -4438,7 +4445,7 @@ input:focus {
   }
 
   .halls-main__list:not(:last-child) {
-    margin-bottom: 1.875rem;
+    margin-bottom: 1.25rem;
   }
 
   .halls-main__wrapper {
@@ -4740,7 +4747,7 @@ input:focus {
   }
 
   .halls-main__list:not(:last-child) {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
 
   .halls-main__list {
@@ -4942,6 +4949,10 @@ input:focus {
 
   .menu {
     overflow: auto;
+  }
+
+  .menu__list {
+    padding-bottom: 10px;
   }
 
   .menu__list {
@@ -5451,7 +5462,7 @@ input:focus {
   }
 
   .restuarants-info__breadcramps:not(:last-child) {
-    margin-bottom: 1.25rem;
+    margin-bottom: 0.625rem;
   }
 
   .item-restuarants__info_mobile {
