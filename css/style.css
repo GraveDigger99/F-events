@@ -5378,6 +5378,12 @@ input:focus {
   margin-bottom: 2.5rem;
 }
 
+.restuarant-registration__items_2x {
+  max-width: 60.375rem;
+  -ms-grid-columns: (1fr)[2];
+  grid-template-columns: repeat(2, 1fr);
+}
+
 .restuarant-registration__topic {
   color: var(--Black, #000);
   font-size: 1.5rem;
@@ -5399,6 +5405,10 @@ input:focus {
 
 .restuarant-registration__topic_address {
   margin-bottom: 0 !important;
+}
+
+.restuarant-registration__topic_mobile {
+  display: none;
 }
 
 .restuarant-registration__textarea {
@@ -5522,6 +5532,24 @@ input:focus {
 
 .photo-albom_border-none-double {
   border: none !important;
+}
+
+.restuarant-registration__selects {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.5rem;
+  max-width: 60.375rem;
+}
+
+.restuarant-registration__selects:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.restuarant-registration__message-block {
+  max-width: 60.375rem;
+  margin-bottom: 2.5rem;
 }
 
 @media (min-width: 47.99875em) {
@@ -6404,6 +6432,10 @@ input:focus {
             column-gap: 1.25rem;
     row-gap: 2.5rem;
   }
+
+  .restuarant-registration__selects {
+    gap: 1.25rem;
+  }
 }
 
 @media (max-width: 91.875em) and (max-width: 61.99875em) {
@@ -6863,6 +6895,10 @@ input:focus {
     -ms-grid-columns: (1fr)[2];
     grid-template-columns: repeat(2, 1fr);
     row-gap: 1.5625rem;
+  }
+
+  .restuarant-registration__topic_mobile {
+    display: block;
   }
 
   .registration-info__items {
@@ -7713,9 +7749,26 @@ input:focus {
     padding-bottom: 40px;
   }
 
+  .restuarant-registration__checkboxs:not(:last-child) {
+    margin-bottom: 2.5rem;
+  }
+
+  .restuarant-registration__choose:not(:last-child) {
+    margin-bottom: 2.5rem;
+  }
+
   .restuarant-registration__items {
     -ms-grid-columns: none;
     grid-template-columns: none;
+  }
+
+  .restuarant-registration__items_2x {
+    -ms-grid-columns: none;
+    grid-template-columns: none;
+  }
+
+  .restuarant-registration__topic:not(:last-child) {
+    margin-bottom: 0.9375rem;
   }
 
   .restuarant-registration__textarea {
@@ -7733,12 +7786,30 @@ input:focus {
             align-items: start;
   }
 
+  .registration-info__wrapper {
+    gap: 1.5625rem;
+  }
+
+  .registration-info__items {
+    gap: 1.25rem;
+  }
+
+  .add-button {
+    margin-top: 25px;
+  }
+
   .add-button {
     width: 100%;
   }
 
   .video-form__add {
     width: 100%;
+  }
+
+  .restuarant-registration__selects {
+    -ms-grid-columns: none;
+    grid-template-columns: none;
+    gap: 1.5625rem;
   }
 }
 
