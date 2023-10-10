@@ -4778,6 +4778,10 @@ input:focus {
 }
 
 .item-main-basket__cancel_desktop {
+  display: block;
+}
+
+.item-main-basket__cancel_mobile {
   display: none;
 }
 
@@ -5288,6 +5292,7 @@ input:focus {
 }
 
 #city,
+#restuarants-registration,
 #gender {
   border: 1px solid var(--Dark-Pink, #8a657b);
   background: var(--White, #fff);
@@ -5299,6 +5304,224 @@ input:focus {
   line-height: 1;
   width: 100%;
   padding: 25px;
+}
+
+.page_restuarant-registration {
+  padding-top: 7.5rem;
+  padding-bottom: 60px;
+}
+
+.restuarant-registration__title {
+  color: var(--Black, #000);
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.0416666667;
+  letter-spacing: 4.8px;
+  text-transform: uppercase;
+}
+
+.restuarant-registration__title:not(:last-child) {
+  margin-bottom: 1.5625rem;
+}
+
+.restuarant-registration__descripiton {
+  color: var(--Black, #000);
+  font-size: 1.5rem;
+  line-height: 0.8333333333;
+}
+
+.restuarant-registration__descripiton:not(:last-child) {
+  margin-bottom: 2.8125rem;
+}
+
+.restuarant-registration__checkboxs {
+  display: -ms-grid;
+  display: grid;
+  gap: 1.5625rem;
+}
+
+.restuarant-registration__checkboxs:not(:last-child) {
+  margin-bottom: 3.75rem;
+}
+
+.restuarant-registration__choose:not(:last-child) {
+  margin-bottom: 3.75rem;
+}
+
+.restuarant-registration__select {
+  display: -ms-grid;
+  display: grid;
+  gap: 1.5625rem;
+}
+
+.restuarant-registration__input {
+  border: 1px solid var(--Dark-Pink, #8a657b);
+  background: var(--White, #fff);
+  padding: 1.5625rem;
+  color: var(--Dark-Pink, #8a657b);
+  leading-trim: both;
+  text-edge: cap;
+  font-size: 18px;
+  line-height: 1.1111111111;
+  width: 100%;
+}
+
+.restuarant-registration__items {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+}
+
+.restuarant-registration__items:not(:last-child) {
+  margin-bottom: 2.5rem;
+}
+
+.restuarant-registration__topic {
+  color: var(--Black, #000);
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 0.8333333333;
+}
+
+.restuarant-registration__topic:not(:last-child) {
+  margin-bottom: 1.5625rem;
+}
+
+.restuarant-registration__wrapper {
+  max-width: 60.375rem;
+}
+
+.restuarant-registration__line:not(:last-child) {
+  margin-bottom: 2.5rem;
+}
+
+.restuarant-registration__topic_address {
+  margin-bottom: 0 !important;
+}
+
+.restuarant-registration__textarea {
+  padding: 25px;
+  border: 1px solid var(--Dark-Pink, #8a657b);
+  background: var(--White, #fff);
+  color: var(--Dark-Pink, #8a657b);
+  leading-trim: both;
+  text-edge: cap;
+  min-height: 16rem;
+  width: 100%;
+  resize: none;
+  font-size: 1.125rem;
+  line-height: 1.1111111111;
+}
+
+.restuarant-registration__address {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1.5625rem;
+}
+
+.registration-info__wrapper {
+  max-width: 58.75rem;
+  display: -ms-grid;
+  display: grid;
+  gap: 2.5rem;
+}
+
+.registration-info__items {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.5rem;
+}
+
+.registration-info__send-line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.registration-info__send-line:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.restuarant-registration__input_info:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.add-button {
+  margin-top: 40px;
+  border: 1px solid var(--Dark-Pink, #8a657b);
+  background: var(--White, #fff);
+  color: var(--Dark-Pink, #8a657b);
+  leading-trim: both;
+  text-edge: cap;
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.1111111111;
+  min-height: 230px;
+  width: 450px;
+}
+
+.video-form__title {
+  color: var(--Black, #000);
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 0.8333333333;
+}
+
+.video-form__title:not(:last-child) {
+  margin-bottom: 25px;
+}
+
+.video-form__description {
+  color: #000;
+  font-size: 1.25rem;
+  line-height: 1;
+}
+
+.video-form__description:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.video-form__inputs {
+  display: -ms-grid;
+  display: grid;
+  gap: 0.9375rem;
+  max-width: 58.75rem;
+}
+
+.video-form__actions {
+  display: -ms-grid;
+  display: grid;
+  gap: 3.75rem;
+}
+
+.video-form__add {
+  margin-top: 40px;
+  padding: 20px 0;
+  border: 1px solid var(--Dark-Pink, #8a657b);
+  background: var(--Beige, #f9f7f8);
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+  color: var(--Dark-Pink, #8a657b);
+  font-size: 1rem;
+  line-height: 1.25;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+}
+
+.video-form__button {
+  padding: 20px 0;
+}
+
+.photo-albom_border-none-double {
+  border: none !important;
 }
 
 @media (min-width: 47.99875em) {
@@ -5385,6 +5608,10 @@ input:focus {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
+
+  .video-form__actions {
+    max-width: 28.125rem;
+  }
 }
 
 @media (min-width: 61.99875em) {
@@ -5410,6 +5637,10 @@ input:focus {
   .form-sidebar__checkbox {
     max-width: 26.25rem;
     margin: 0 auto;
+  }
+
+  .restuarant-registration__choose {
+    max-width: 28.125rem;
   }
 }
 
@@ -6113,6 +6344,14 @@ input:focus {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+
+  .item-main-basket__cancel_desktop {
+    display: none;
   }
 
   .item-main-basket__cancel_mobile {
@@ -6153,6 +6392,17 @@ input:focus {
 
   .customer-registration__items {
     gap: 1.25rem;
+  }
+
+  .page_restuarant-registration {
+    padding-top: 8.75rem;
+  }
+
+  .restuarant-registration__items {
+    -webkit-column-gap: 1.25rem;
+       -moz-column-gap: 1.25rem;
+            column-gap: 1.25rem;
+    row-gap: 2.5rem;
   }
 }
 
@@ -6603,6 +6853,29 @@ input:focus {
 
   .select-customer {
     gap: 1.5625rem;
+  }
+
+  .restuarant-registration__input {
+    padding: 20px;
+  }
+
+  .restuarant-registration__items {
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 1.5625rem;
+  }
+
+  .registration-info__items {
+    -ms-grid-columns: none;
+    grid-template-columns: none;
+  }
+
+  .video-form__actions {
+    gap: 2.5rem;
+  }
+
+  .video-form__add {
+    margin-top: 1.5625rem;
   }
 }
 
@@ -7421,13 +7694,51 @@ input:focus {
   }
 
   #city,
+  #restuarants-registration,
   #gender {
     font-size: 1.125rem;
   }
 
   #city,
+  #restuarants-registration,
   #gender {
     padding: 20px;
+  }
+
+  .page_restuarant-registration {
+    padding-top: 11.25rem;
+  }
+
+  .page_restuarant-registration {
+    padding-bottom: 40px;
+  }
+
+  .restuarant-registration__items {
+    -ms-grid-columns: none;
+    grid-template-columns: none;
+  }
+
+  .restuarant-registration__textarea {
+    padding: 20px;
+    min-height: 170px !important;
+  }
+
+  .restuarant-registration__address {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
+
+  .add-button {
+    width: 100%;
+  }
+
+  .video-form__add {
+    width: 100%;
   }
 }
 
@@ -8114,6 +8425,11 @@ input:focus {
 
   .authorization__link:hover {
     text-decoration: underline;
+  }
+
+  .video-form__add:hover {
+    background: var(--Beige, #8a657b);
+    color: #fff;
   }
 }
 
