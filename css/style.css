@@ -5455,7 +5455,6 @@ input:focus {
 }
 
 .add-button {
-  margin-top: 40px;
   border: 1px solid var(--Dark-Pink, #8a657b);
   background: var(--White, #fff);
   color: var(--Dark-Pink, #8a657b);
@@ -5466,6 +5465,24 @@ input:focus {
   line-height: 1.1111111111;
   min-height: 230px;
   width: 450px;
+}
+
+.add-button__wrapper {
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  gap: 1.25rem;
+}
+
+.add-button__wrapper span {
+  color: #000;
+  font-size: 1.25rem;
+  line-height: 1;
+  max-width: 26.4375rem;
 }
 
 .video-form__title {
@@ -6454,6 +6471,10 @@ input:focus {
        -moz-column-gap: 1.25rem;
             column-gap: 1.25rem;
     row-gap: 2.5rem;
+  }
+
+  .add-button__wrapper span {
+    font-size: 1.125rem;
   }
 
   .restuarant-registration__selects {
@@ -7821,8 +7842,12 @@ input:focus {
     gap: 1.25rem;
   }
 
-  .add-button {
+  .add-button__wrapper {
     margin-top: 25px;
+  }
+
+  .add-button__wrapper span {
+    display: none;
   }
 
   .add-button {
