@@ -5450,16 +5450,6 @@ input:focus {
   gap: 2.5rem;
 }
 
-.registration-info__send-line {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.registration-info__send-line:not(:last-child) {
-  margin-bottom: 40px;
-}
-
 .restuarant-registration__input_info:not(:last-child) {
   margin-bottom: 40px;
 }
@@ -5550,6 +5540,39 @@ input:focus {
 .restuarant-registration__message-block {
   max-width: 60.375rem;
   margin-bottom: 2.5rem;
+}
+
+.file {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid var(--Dark-Pink, #8a657b);
+  background: var(--White, #fff);
+  position: relative;
+  z-index: 2;
+  min-height: 4.6875rem;
+}
+
+.file span {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding-left: 25px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  color: var(--Dark-Pink, rgba(138, 101, 123, 0.605));
+  leading-trim: both;
+  text-edge: cap;
+  font-size: 1.125rem;
+  line-height: 1.1111111111;
+}
+
+.file button {
+  min-height: 100%;
+  pointer-events: none;
 }
 
 @media (min-width: 47.99875em) {
@@ -6912,6 +6935,10 @@ input:focus {
 
   .video-form__add {
     margin-top: 1.5625rem;
+  }
+
+  .file {
+    min-height: 4.0625rem;
   }
 }
 

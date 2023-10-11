@@ -5,7 +5,7 @@
 	<title>Restuarant-registration</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
-	<link rel="stylesheet" href="css/style.min.css?_v=20231010200338">
+	<link rel="stylesheet" href="css/style.min.css?_v=20231011131404">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
@@ -168,8 +168,11 @@
 							<div class="registration-info__item">
 								<div class="restuarant-registration__topic">Прирепить файл с презенацией PDF</div>
 								<div class="registration-info__send-line">
-									<input placeholder="Выберите файл" type="text" class="restuarant-registration__input">
-									<button class="restuarant-info__button button">Обзор</button>
+									<input id="file2" hidden placeholder="Выберите файл" type="file" class="restuarant-registration__input">
+									<label for="file2" class="file">
+										<span>Выберите файл</span>
+										<button class="restuarant-info__button button">Обзор</button>
+									</label>
 								</div>
 							</div>
 							<div class="registration-info__item">
@@ -179,8 +182,11 @@
 							<div class="registration-info__item">
 								<div class="restuarant-registration__topic restuarant-registration__topic_mobile">Прирепить файл с презенацией PDF</div>
 								<div class="registration-info__send-line">
-									<input placeholder="Выберите файл" type="text" class="restuarant-registration__input">
-									<button class="restuarant-info__button button">Обзор</button>
+									<input id="file3" hidden placeholder="Выберите файл" type="file" class="restuarant-registration__input">
+									<label for="file3" class="file">
+										<span>Выберите файл</span>
+										<button class="restuarant-info__button button">Обзор</button>
+									</label>
 								</div>
 							</div>
 						</div>
@@ -266,7 +272,7 @@
 			</section>
 		</main>
 	</div>
-	<script src="js/app.min.js?_v=20231010200338"></script>
+	<script src="js/app.min.js?_v=20231011131404"></script>
 </body>
 
 </html>
