@@ -2,7 +2,7 @@
 <html lang="ru">
 
 <head>
-	<title>Reviews</title>
+	<title>Order services</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<link rel="stylesheet" href="css/style.min.css?_v=20231017140403">
@@ -64,7 +64,7 @@
 			</div>
 		</header>
 		<main class="page page_services-goods">
-			<div class="page__container">
+			<div class="page__container page__container_gap">
 				<div class="page__header-blok">
 					<div class="decor decor_restuarants-info">
 						<span>
@@ -110,10 +110,10 @@
 								<a href="#" class="sidebar-menu__link">Забронировать</a>
 							</li>
 							<li>
-								<a href="#" class="sidebar-menu__link">заказы</a>
+								<a href="#" class="sidebar-menu__link sidebar-menu__link_active">заказы</a>
 							</li>
-							<li class="sidebar-menu__active-list">
-								<a href="#" class="sidebar-menu__link sidebar-menu__link_active sidebar-menu__link_white">Отзывы
+							<li>
+								<a href="#" class="sidebar-menu__link">Отзывы
 								</a>
 								<span>6</span>
 							</li>
@@ -143,212 +143,121 @@
 								Текст уведомления для пользователей
 							</span>
 						</div>
-						<h1 class="inner-block__title">управление отзывами</h1>
-						<form class="inner-block__navigation navigation-block navigation-block_clients">
-							<div class="navigation-block__search">
-								<div class="navigation-block__input-wrapper navigation-block__input-wrapper_filter">
-									<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-										<path d="M14.7682 13.2052L14.7612 13.1983L14.7529 13.1928L14.7503 13.191C14.6984 13.1565 14.6403 13.1178 14.581 13.0882C14.5204 13.058 14.4507 13.033 14.3751 13.033H14.1237C15.1694 11.7492 15.8364 10.0768 15.8364 8.27034C15.8364 4.13886 12.424 0.733313 8.28489 0.733313C4.10968 0.733313 0.733336 4.13918 0.733336 8.27034C0.733336 12.4376 4.11 15.8074 8.28489 15.8074C10.0967 15.8074 11.7411 15.1731 13.0571 14.13V14.3844C13.0571 14.5152 13.101 14.6414 13.1814 14.7618L13.1869 14.77L13.1939 14.777L17.5287 19.1033C17.7405 19.3148 18.0944 19.3286 18.2827 19.0997L19.0993 18.2847C19.3287 18.0967 19.3149 17.7431 19.103 17.5316L14.7682 13.2052ZM8.28489 13.8911C5.15153 13.8911 2.65293 11.3971 2.65293 8.27034C2.65293 5.17891 5.15194 2.64955 8.28489 2.64955C11.3824 2.64955 13.9169 5.17932 13.9169 8.27034C13.9169 11.3967 11.3828 13.8911 8.28489 13.8911Z" fill="#8A657B" stroke="#F1F7FF" stroke-width="0.2" />
-									</svg>
-									<input placeholder="Поиск" class="navigation-block__input"></input>
-									<div class="navigation-block__filter filter-navigation">
-										<select name="filter" id="filter">
-											<option value="1">по партнеру</option>
-											<option value="1">по имени</option>
-											<option value="1">По эл. почте</option>
-										</select>
+						<h1 class="inner-block__title">Редактировать заказ</h1>
+						<div class="book-services">
+							<div class="book-services__wrapper">
+								<form action="#" class="book-services__form">
+									<div class="book-services__topic">Данные для бронирования</div>
+									<select name="book-services" id="book-services">
+										<option value="1">Выберите клиента</option>
+									</select>
+									<select name="book-services" id="book-services">
+										<option value="1">Выберите товар или услугу</option>
+									</select>
+									<input placeholder="Укажите количество гостей" type="text" class="book-services__input input">
+								</form>
+								<div class="book-services__datapicker">
+									<div class="book-services__topic">Выберите дату для бронирования</div>
+									<div class="book-services__date-wrapper">
+										<div class="book-calender__datepicker datepicker datepicker_small datepicker_book">
+											<div class="datepicker__top">
+												<button class="datepicker__prev">
+													<svg xmlns="http://www.w3.org/2000/svg" width="8" height="10" viewBox="0 0 8 10" fill="none">
+														<path d="M6 1L2 4.98617L6 8.97234" stroke="#8A657B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+													</svg>
+												</button>
+												<span class="datepicker__month">
+													Апрель 2023
+												</span>
+												<button class="datepicker__next">
+													<svg xmlns="http://www.w3.org/2000/svg" width="8" height="10" viewBox="0 0 8 10" fill="none">
+														<path d="M2 1L6 4.98617L2 8.97234" stroke="#8A657B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+													</svg>
+												</button>
+											</div>
+											<div class="datepicker__body">
+												<div hidden class="datepicker__week">
+													<ul>
+														<button>пн</button>
+														<button>вт</button>
+														<button>ср</button>
+														<button>чт</button>
+														<button>пт</button>
+														<button>сб</button>
+														<button>вс</button>
+													</ul>
+												</div>
+												<div class="datepicker__days">
+													<button>27</button>
+													<button>28</button>
+													<button>29</button>
+													<button>30</button>
+													<button>31</button>
+													<button>1</button>
+													<button>2</button>
+													<button>3</button>
+													<button>4</button>
+													<button>5</button>
+													<button>6</button>
+													<button>7</button>
+													<button>8</button>
+													<button>9</button>
+													<button>10</button>
+													<button>11</button>
+													<button>12</button>
+													<button>13</button>
+													<button>14</button>
+													<button>15</button>
+													<button>16</button>
+													<button>17</button>
+													<button>18</button>
+													<button>19</button>
+													<button>20</button>
+													<button>21</button>
+													<button>22</button>
+													<button>23</button>
+													<button>24</button>
+													<button>25</button>
+													<button>26</button>
+													<button>27</button>
+													<button>28</button>
+													<button>29</button>
+													<button>30</button>
+												</div>
+											</div>
+										</div>
+										<div class="book-services__info-date">
+											<span>Занятые даты</span>
+											<span>Свободные даты</span>
+										</div>
 									</div>
 								</div>
-								<button class="navigation-block__search-button">
-									Найти
-								</button>
 							</div>
-							<button hidden class="navigation-block__button button">
-								Добавить услугу/товар
-							</button>
-						</form>
-						<div class="inner-block__wrapper">
-							<div class="inner-block__header-list">
-								<ul class="inner-block__list-reviews">
-									<li>
-										Партнер
-									</li>
-									<li>
-										Дата размещения
-									</li>
-									<li>
-										Текст отзыва
-									</li>
-									<li>
-										Оценка
-									</li>
-									<li>
-										Логин
-									</li>
-									<li>
-										Имя клиента
-									</li>
-									<li>
-										Действия
-									</li>
-								</ul>
+							<div class="book-services__textarea">
+								<label for="" class="book-services__topic">Комментарий</label>
+								<textarea>Текст комментария</textarea>
 							</div>
-							<div class="inner-block__rows">
-								<div class="inner-block__row inner-block__row_reviews">
-									<p>Villa Pasta</p>
-									<p>01.04.2023</p>
-									<p class="inner-block__review-text">Такой то такой то текст, который можно редактировать если тут встречается нормальная критика, но есть мат</p>
-									<p>4</p>
-									<p>
-										andreypobrey
-									</p>
-									<p>
-										Андрей
-									</p>
-									<a href="#" class="inner-block__response-button">
-										Ответить
-									</a>
-								</div>
-								<div class="inner-block__row inner-block__row_reviews">
-									<p>Villa Pasta</p>
-									<p>01.04.2023</p>
-									<p class="inner-block__review-text">Такой то такой то текст, который можно редактировать если тут встречается нормальная критика, но есть мат</p>
-									<p>4</p>
-									<p>
-										andreypobrey
-									</p>
-									<p>
-										Андрей
-									</p>
-									<a href="#" class="inner-block__response-button">
-										Ответить
-									</a>
-								</div>
-								<div class="inner-block__row inner-block__row_reviews">
-									<p>Villa Pasta</p>
-									<p>01.04.2023</p>
-									<p class="inner-block__review-text">Такой то такой то текст, который можно редактировать если тут встречается нормальная критика, но есть мат</p>
-									<p>4</p>
-									<p>
-										andreypobrey
-									</p>
-									<p>
-										Андрей
-									</p>
-									<a href="#" class="inner-block__response-button">
-										Ответить
-									</a>
-								</div>
-								<div class="inner-block__row inner-block__row_reviews">
-									<p>Villa Pasta</p>
-									<p>01.04.2023</p>
-									<p class="inner-block__review-text">Такой то такой то текст, который можно редактировать если тут встречается нормальная критика, но есть мат</p>
-									<p>4</p>
-									<p>
-										andreypobrey
-									</p>
-									<p>
-										Андрей
-									</p>
-									<a href="#" class="inner-block__response-button">
-										Ответить
-									</a>
-								</div>
-								<div class="inner-block__row inner-block__row_reviews">
-									<p>Villa Pasta</p>
-									<p>01.04.2023</p>
-									<p class="inner-block__review-text">Такой то такой то текст, который можно редактировать если тут встречается нормальная критика, но есть мат</p>
-									<p>4</p>
-									<p>
-										andreypobrey
-									</p>
-									<p>
-										Андрей
-									</p>
-									<a href="#" class="inner-block__response-button">
-										Ответить
-									</a>
-								</div>
-								<div class="inner-block__row inner-block__row_reviews">
-									<p>Villa Pasta</p>
-									<p>01.04.2023</p>
-									<p class="inner-block__review-text">Такой то такой то текст, который можно редактировать если тут встречается нормальная критика, но есть мат</p>
-									<p>4</p>
-									<p>
-										andreypobrey
-									</p>
-									<p>
-										Андрей
-									</p>
-									<a href="#" class="inner-block__response-button">
-										Ответить
-									</a>
-								</div>
-								<div class="inner-block__row inner-block__row_reviews">
-									<p>Villa Pasta</p>
-									<p>01.04.2023</p>
-									<p class="inner-block__review-text">Такой то такой то текст, который можно редактировать если тут встречается нормальная критика, но есть мат</p>
-									<p>4</p>
-									<p>
-										andreypobrey
-									</p>
-									<p>
-										Андрей
-									</p>
-									<a href="#" class="inner-block__response-button">
-										Ответить
-									</a>
-								</div>
-								<div class="inner-block__row inner-block__row_reviews">
-									<p>Villa Pasta</p>
-									<p>01.04.2023</p>
-									<p class="inner-block__review-text">Такой то такой то текст, который можно редактировать если тут встречается нормальная критика, но есть мат</p>
-									<p>4</p>
-									<p>
-										andreypobrey
-									</p>
-									<p>
-										Андрей
-									</p>
-									<a href="#" class="inner-block__response-button">
-										Ответить
-									</a>
-								</div>
+							<div class="book-services__total-price">
+								<span class="book-services__total-label">Итоговая сумма бронирования</span>
+								<span class="book-services__price">35 000 ₽</span>
 							</div>
-						</div>
-						<div class="inner-block__bottom">
-							<div class="inner-block__pages">
-								<ul>
-									<li>
-										<a class="active" href="#">1</a>
-									</li>
-									<li>
-										<a href="#">2</a>
-									</li>
-									<li>
-										<a href="#">3</a>
-									</li>
-									<li>
-										<a href="#">...</a>
-									</li>
-									<li>
-										<a href="#">10</a>
-									</li>
-									<li>
-										<a href="#">...</a>
-									</li>
-									<li>
-										<a href="#">25</a>
-									</li>
-									<li>
-										<a href="#">26</a>
-									</li>
-									<li>
-										<a href="#">27</a>
-									</li>
-								</ul>
+							<div class="book-services__cta book-services__cta_buttons">
+								<div class="book-services__buttons">
+									<button class="book-services__accept">
+										<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+											<path d="M18.71 7.20986C18.617 7.11613 18.5064 7.04174 18.3846 6.99097C18.2627 6.9402 18.132 6.91406 18 6.91406C17.868 6.91406 17.7373 6.9402 17.6154 6.99097C17.4936 7.04174 17.383 7.11613 17.29 7.20986L9.84001 14.6699L6.71001 11.5299C6.61349 11.4366 6.49955 11.3633 6.37469 11.3141C6.24984 11.2649 6.11651 11.2408 5.98233 11.2431C5.84815 11.2454 5.71574 11.2741 5.59266 11.3276C5.46959 11.3811 5.35825 11.4583 5.26501 11.5549C5.17177 11.6514 5.09846 11.7653 5.04925 11.8902C5.00005 12.015 4.97592 12.1484 4.97824 12.2825C4.98056 12.4167 5.00929 12.5491 5.06278 12.6722C5.11628 12.7953 5.19349 12.9066 5.29001 12.9999L9.13001 16.8399C9.22297 16.9336 9.33358 17.008 9.45543 17.0588C9.57729 17.1095 9.708 17.1357 9.84001 17.1357C9.97202 17.1357 10.1027 17.1095 10.2246 17.0588C10.3464 17.008 10.457 16.9336 10.55 16.8399L18.71 8.67986C18.8115 8.58622 18.8925 8.47257 18.9479 8.34607C19.0033 8.21957 19.0319 8.08296 19.0319 7.94486C19.0319 7.80676 19.0033 7.67015 18.9479 7.54365C18.8925 7.41715 18.8115 7.3035 18.71 7.20986Z" fill="#8A657B" />
+										</svg>
+										<span>ОСТАВИТЬ</span>
+									</button>
+									<button class="book-services__delete">
+										<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+											<path d="M8.33333 15.0003C8.55435 15.0003 8.76631 14.9125 8.92259 14.7562C9.07887 14.6 9.16667 14.388 9.16667 14.167V9.16699C9.16667 8.94598 9.07887 8.73402 8.92259 8.57774C8.76631 8.42146 8.55435 8.33366 8.33333 8.33366C8.11232 8.33366 7.90036 8.42146 7.74408 8.57774C7.5878 8.73402 7.5 8.94598 7.5 9.16699V14.167C7.5 14.388 7.5878 14.6 7.74408 14.7562C7.90036 14.9125 8.11232 15.0003 8.33333 15.0003ZM16.6667 5.00033H13.3333V4.16699C13.3333 3.50395 13.0699 2.86807 12.6011 2.39923C12.1323 1.93038 11.4964 1.66699 10.8333 1.66699H9.16667C8.50363 1.66699 7.86774 1.93038 7.3989 2.39923C6.93006 2.86807 6.66667 3.50395 6.66667 4.16699V5.00033H3.33333C3.11232 5.00033 2.90036 5.08812 2.74408 5.2444C2.5878 5.40068 2.5 5.61265 2.5 5.83366C2.5 6.05467 2.5878 6.26663 2.74408 6.42291C2.90036 6.5792 3.11232 6.66699 3.33333 6.66699H4.16667V15.8337C4.16667 16.4967 4.43006 17.1326 4.8989 17.6014C5.36774 18.0703 6.00363 18.3337 6.66667 18.3337H13.3333C13.9964 18.3337 14.6323 18.0703 15.1011 17.6014C15.5699 17.1326 15.8333 16.4967 15.8333 15.8337V6.66699H16.6667C16.8877 6.66699 17.0996 6.5792 17.2559 6.42291C17.4122 6.26663 17.5 6.05467 17.5 5.83366C17.5 5.61265 17.4122 5.40068 17.2559 5.2444C17.0996 5.08812 16.8877 5.00033 16.6667 5.00033ZM8.33333 4.16699C8.33333 3.94598 8.42113 3.73402 8.57741 3.57774C8.73369 3.42146 8.94565 3.33366 9.16667 3.33366H10.8333C11.0543 3.33366 11.2663 3.42146 11.4226 3.57774C11.5789 3.73402 11.6667 3.94598 11.6667 4.16699V5.00033H8.33333V4.16699ZM14.1667 15.8337C14.1667 16.0547 14.0789 16.2666 13.9226 16.4229C13.7663 16.5792 13.5543 16.667 13.3333 16.667H6.66667C6.44565 16.667 6.23369 16.5792 6.07741 16.4229C5.92113 16.2666 5.83333 16.0547 5.83333 15.8337V6.66699H14.1667V15.8337ZM11.6667 15.0003C11.8877 15.0003 12.0996 14.9125 12.2559 14.7562C12.4122 14.6 12.5 14.388 12.5 14.167V9.16699C12.5 8.94598 12.4122 8.73402 12.2559 8.57774C12.0996 8.42146 11.8877 8.33366 11.6667 8.33366C11.4457 8.33366 11.2337 8.42146 11.0774 8.57774C10.9211 8.73402 10.8333 8.94598 10.8333 9.16699V14.167C10.8333 14.388 10.9211 14.6 11.0774 14.7562C11.2337 14.9125 11.4457 15.0003 11.6667 15.0003Z" fill="#8A657B" />
+										</svg>
+										<span>Удалить</span>
+									</button>
+								</div>
+								<button class="book-services__book-button">Сохранить</button>
 							</div>
-							<a href="#" class="inner-block__showmore button">показать ещё</a>
 						</div>
 					</div>
 				</div>
