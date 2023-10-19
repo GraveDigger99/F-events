@@ -2,7 +2,7 @@
 <html lang="ru">
 
 <head>
-	<title>Clients</title>
+	<title>Clients-2</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<link rel="stylesheet" href="css/style.min.css?_v=20231019131701">
@@ -145,13 +145,23 @@
 						</div>
 						<h1 class="inner-block__title">Клиенты</h1>
 						<form class="inner-block__navigation navigation-block navigation-block_clients">
-							<div class="navigation-block__items">
-								<select name="actions" id="navigation-block__select">
-									<option value="1">Действия</option>
-									<option value="2">Оставить выбранные</option>
-									<option value="3">Редактировать выбранные</option>
-									<option value="4">Удалить выбранные</option>
-								</select>
+							<div class="navigation-block__items navigation-block__items_list">
+								<div class="navigation-block__spollers-block">
+									<button class="navigation-block__spoller">
+										Действия
+										<svg xmlns="http://www.w3.org/2000/svg" width="14" height="12" viewBox="0 0 14 12" fill="none">
+											<path d="M1 3L6.97925 9L12.9585 3" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+										</svg>
+									</button>
+									<div class="navigation-block__sub-block">
+										<button>Оставить выбранные</button>
+										<button>Редактировать выбранные</button>
+										<button>Удалить выбранные</button>
+									</div>
+								</div>
+								<button hidden class="navigation-block__button navigation-block__button_2 button">
+									Добавить услугу/товар
+								</button>
 							</div>
 							<div class="navigation-block__search">
 								<div class="navigation-block__input-wrapper navigation-block__input-wrapper_filter">
@@ -160,18 +170,26 @@
 									</svg>
 									<input placeholder="Поиск" class="navigation-block__input"></input>
 									<div class="navigation-block__filter filter-navigation">
-										<select name="filter" id="filter">
-											<option value="1">по имени</option>
-											<option value="1">По партнеру</option>
-											<option value="1">По эл. почте</option>
-										</select>
+										<div class="navigation-block__select-type">
+											<button class="navigation-block__select-button">
+												по имени
+												<svg xmlns="http://www.w3.org/2000/svg" width="10" height="8" viewBox="0 0 10 8" fill="none">
+													<path d="M1 6L4.98617 2L8.97234 6" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+												</svg>
+											</button>
+											<div class="navigation-block__sub-block navigation-block__sub-block_filter">
+												<button>По имени</button>
+												<button>По партнеру</button>
+												<button>По эл. почте</button>
+											</div>
+										</div>
 									</div>
 								</div>
 								<button class="navigation-block__search-button">
 									Найти
 								</button>
 							</div>
-							<button class="navigation-block__button button">
+							<button class="navigation-block__button navigation-block__button_desktop button">
 								Добавить услугу/товар
 							</button>
 						</form>

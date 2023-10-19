@@ -2,7 +2,7 @@
 <html lang="ru">
 
 <head>
-	<title>Book services</title>
+	<title>Reports</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<link rel="stylesheet" href="css/style.min.css?_v=20231019131701">
@@ -107,7 +107,7 @@
 								<a href="#" class="sidebar-menu__link">Клиенты</a>
 							</li>
 							<li>
-								<a href="#" class="sidebar-menu__link sidebar-menu__link_active">Забронировать</a>
+								<a href="#" class="sidebar-menu__link">Забронировать</a>
 							</li>
 							<li>
 								<a href="#" class="sidebar-menu__link">заказы</a>
@@ -121,7 +121,7 @@
 								<a href="#" class="sidebar-menu__link">Управление рекламой</a>
 							</li>
 							<li>
-								<a href="#" class="sidebar-menu__link">Отчеты</a>
+								<a href="#" class="sidebar-menu__link sidebar-menu__link_active">Отчеты</a>
 							</li>
 							<li>
 								<a href="#" class="sidebar-menu__link">общие настройки</a>
@@ -143,106 +143,64 @@
 								Текст уведомления для пользователей
 							</span>
 						</div>
-						<h1 class="inner-block__title">забронировать</h1>
-						<div class="book-services">
-							<div class="book-services__wrapper">
-								<form action="#" class="book-services__form">
-									<div class="book-services__topic">Данные для бронирования</div>
-									<select name="book-services" id="book-services">
-										<option value="1">Выберите клиента</option>
-									</select>
-									<select name="book-services" id="book-services">
-										<option value="1">Выберите товар или услугу</option>
-									</select>
-									<input placeholder="Укажите количество гостей" type="text" class="book-services__input input">
-								</form>
-								<div class="book-services__datapicker">
-									<div class="book-services__topic">Выберите дату для бронирования</div>
-									<div class="book-services__date-wrapper">
-										<div class="book-calender__datepicker datepicker datepicker_small datepicker_book">
-											<div class="datepicker__top">
-												<button class="datepicker__prev">
-													<svg xmlns="http://www.w3.org/2000/svg" width="8" height="10" viewBox="0 0 8 10" fill="none">
-														<path d="M6 1L2 4.98617L6 8.97234" stroke="#8A657B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-													</svg>
-												</button>
-												<span class="datepicker__month">
-													Апрель 2023
-												</span>
-												<button class="datepicker__next">
-													<svg xmlns="http://www.w3.org/2000/svg" width="8" height="10" viewBox="0 0 8 10" fill="none">
-														<path d="M2 1L6 4.98617L2 8.97234" stroke="#8A657B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-													</svg>
-												</button>
-											</div>
-											<div class="datepicker__body">
-												<div hidden class="datepicker__week">
-													<ul>
-														<button>пн</button>
-														<button>вт</button>
-														<button>ср</button>
-														<button>чт</button>
-														<button>пт</button>
-														<button>сб</button>
-														<button>вс</button>
-													</ul>
-												</div>
-												<div class="datepicker__days">
-													<button>27</button>
-													<button>28</button>
-													<button>29</button>
-													<button>30</button>
-													<button>31</button>
-													<button>1</button>
-													<button>2</button>
-													<button>3</button>
-													<button>4</button>
-													<button>5</button>
-													<button>6</button>
-													<button>7</button>
-													<button>8</button>
-													<button>9</button>
-													<button>10</button>
-													<button>11</button>
-													<button>12</button>
-													<button>13</button>
-													<button>14</button>
-													<button>15</button>
-													<button>16</button>
-													<button>17</button>
-													<button>18</button>
-													<button>19</button>
-													<button>20</button>
-													<button>21</button>
-													<button>22</button>
-													<button>23</button>
-													<button>24</button>
-													<button>25</button>
-													<button>26</button>
-													<button>27</button>
-													<button>28</button>
-													<button>29</button>
-													<button>30</button>
-												</div>
-											</div>
-										</div>
-										<div class="book-services__info-date">
-											<span>Занятые даты</span>
-											<span>Свободные даты</span>
-										</div>
-									</div>
+						<h1 class="inner-block__title">Отчеты</h1>
+						<form action="#" class="reports-form">
+							<div class="reports-form__line">
+								<label for="#" class="reports-form__label">Выберите партнера</label>
+								<select name="reports-form-partner" id="reports-form-partner">
+									<option value="1">Все</option>
+									<option value="1">1</option>
+								</select>
+							</div>
+							<div class="reports-form__period">
+								<label for="" class="reports-form__label">Выберите период</label>
+								<div class="reports-form__inputs-wrapper">
+									<input placeholder="01.04.2023" type="text" class="reports-form__input">
+									<span>-</span>
+									<input placeholder="30.04.2023" type="text" class="reports-form__input">
 								</div>
 							</div>
-							<div class="book-services__textarea">
-								<label for="" class="book-services__topic">Комментарий</label>
-								<textarea>Текст комментария</textarea>
+						</form>
+						<div class="reports-statistic">
+							<div class="reports-statistic__items">
+								<div class="reports-statistic__item">
+									<div class="reports-statistic__label">Продажи</div>
+									<span class="reports-statistic__count">100 000 ₽</span>
+								</div>
+								<div class="reports-statistic__item">
+									<div class="reports-statistic__label">Клиенты</div>
+									<span class="reports-statistic__count">10</span>
+								</div>
+								<div class="reports-statistic__item">
+									<div class="reports-statistic__label">Реклама</div>
+									<span class="reports-statistic__count">5000 ₽</span>
+								</div>
+								<div class="reports-statistic__item">
+									<div class="reports-statistic__label">Просмотров карточки</div>
+									<span class="reports-statistic__count">500</span>
+								</div>
+								<div class="reports-statistic__item">
+									<div class="reports-statistic__label">Просмотров услуг</div>
+									<span class="reports-statistic__count">500</span>
+								</div>
 							</div>
-							<div class="book-services__total-price">
-								<span class="book-services__total-label">Итоговая сумма бронирования</span>
-								<span class="book-services__price">35 000 ₽</span>
-							</div>
-							<div class="book-services__cta">
-								<button class="book-services__book-button">Забронировать</button>
+							<div class="reports-statistic__items reports-statistic__items_bottom">
+								<div class="reports-statistic__item">
+									<div class="reports-statistic__label">Кликов по баннеру 330*380</div>
+									<span class="reports-statistic__count">100</span>
+								</div>
+								<div class="reports-statistic__item">
+									<div class="reports-statistic__label">Кликов по баннеру 1440*440</div>
+									<span class="reports-statistic__count">100</span>
+								</div>
+								<div class="reports-statistic__item">
+									<div class="reports-statistic__label">Просмотров баннера 330*380</div>
+									<span class="reports-statistic__count">1000</span>
+								</div>
+								<div class="reports-statistic__item">
+									<div class="reports-statistic__label">Просмотров баннера 1440*440</div>
+									<span class="reports-statistic__count">1000</span>
+								</div>
 							</div>
 						</div>
 					</div>
