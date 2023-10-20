@@ -7973,6 +7973,15 @@ input:focus {
   line-height: 0.7142857143;
 }
 
+.reports-chart:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.reports-chart img {
+  max-width: 100%;
+  min-height: 150px;
+}
+
 .navigation-block__spollers-block {
   position: relative;
 }
